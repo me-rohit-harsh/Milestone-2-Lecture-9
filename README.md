@@ -5,7 +5,7 @@
 ![2 What is the output](https://user-images.githubusercontent.com/81718623/191872633-c0da7e0d-6768-491b-9247-d0e827f5a99f.jpg)
 # 3. ***What is the output***
 ![3 What is the output](https://user-images.githubusercontent.com/81718623/191872639-e8334e24-7454-47fe-9a2b-b6300e8c7069.jpg)
-# 1. ***Length of array***
+# 4. ***Length of array***
 ![4 Length of array](https://user-images.githubusercontent.com/81718623/191872679-4de5ac3d-c2c9-4f9d-9a32-40572fcaf8a3.jpg)
 # 5. ***Return Array Sum***
 ### Code:Return Array Sum
@@ -44,12 +44,24 @@ public class Solution {
 # 7. ***Arrange Numbers in Array***
 ### Code:Arrange Numbers in Array
 
+import java.util.Scanner;
 public class Solution {
     
     public static void arrange(int[] arr, int n) {
-    	//Your code goes here
+        int mid = (n + 1) / 2;
+        int pri = 1;
+        for (int i = 0; i < mid; i++) {
+            arr[i]=pri;
+            pri = pri + 2;
+            
+            
+        }
+        int pri1 = (n - mid)*2;
+        for (int i = mid; i <n; i++) {
+            arr[i]=pri1;
+            pri1 = pri1 - 2;
+        }
     }
-    
 }
 
 # 8. ***Non Primitives***
